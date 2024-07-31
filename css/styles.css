@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(190, 234, 189);
+}
+
+.container {
+    background: rgb(236, 239, 236);
+    width: 90%;
+    max-width: 800px;
+    padding: 0; 
+    padding-left: 20px;
+    border-radius: 8px;
+}
+
+.inter {
+    background: rgb(9, 149, 9);
+    padding: 30px;
+    color: white;
+    text-align: center;
+    margin-left: -20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.content h1 {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.2;
+    word-wrap: break-word; 
+}
+
+.sub-titulo h3 {
+    padding: 10px;
+    color: #39A900;
+    margin-bottom: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#numero{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    background: white;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 20rem;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(9, 149, 9);
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    color: black;
+    background-color: rgb(3, 183, 255);
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 10px;
+    }
+
+    .inter {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .content h1 {
+        font-size: 1.4em;
+    }
+
+    button {
+        margin-left: 0;
+        width: 100%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .inter {
+        height: auto;
+        padding: 15px;
+    }
+
+    .content h1 {
+        font-size: 1.2em;
+    }
+
+    .radio-group {
+        flex-direction: column;
+    }
+
+    input[type="text"], select, button {
+        font-size: 0.9em;
+    }
+
+    button {
+        width: 100%; 
+        margin-left: 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    .sub-titulo h3 {
+        font-size: 1.1em;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+
+    input[type="text"], select, button {
+        font-size: 0.8em;
+    }
+
+    .radio-group {
+        gap: 5px; 
+    }
+
+    .radio-group input[type="radio"] {
+        margin-right: 3px;
+    }
+}
